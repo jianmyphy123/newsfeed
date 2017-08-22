@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
-import { Elements } from './theme'
+import { Home } from './pages'
 import { Provider } from 'react-redux'
 import store from './stores'
 
@@ -10,7 +10,7 @@ import store from './stores'
 
 const app = (
   <Provider store={store.configure(null)}>
-    <Elements />
+    <Home />
   </Provider>
 );
 
