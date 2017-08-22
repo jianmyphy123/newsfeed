@@ -1,14 +1,17 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
-import store from './stores'
+import { Elements } from './theme'
 import { Provider } from 'react-redux'
-import Intro from './components/presentation/Intro'
+import store from './stores'
+
+/* The Elements components is a summary of basic presentation componets
+ * available for use in this theme
+ */
 
 const app = (
-	<Provider store={store.configure(null)}>
-		<Intro />
-	</Provider>
-)
-
+  <Provider store={store.configure(null)}>
+    <Elements />
+  </Provider>
+);
 
 ReactDOM.render(app, document.getElementById('root'))
